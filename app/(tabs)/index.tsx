@@ -257,7 +257,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 320,
     height: 120,
-    marginBottom: 30,
+    marginBottom: 29,
     borderWidth: 2,
     //borderColor: '#FFF',
   },
