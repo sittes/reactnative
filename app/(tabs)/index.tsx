@@ -117,7 +117,7 @@ const App: React.FC = () => {
               value={email}
               onChangeText={setEmail}
               placeholderTextColor='#FFF'
-              marginBottom={19}
+              marginBottom={20}
             />
 
             {/* Campo de entrada de senha */}
