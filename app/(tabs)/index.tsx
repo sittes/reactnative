@@ -198,15 +198,6 @@ const App: React.FC = () => {
                 onChangeText={(text) => { setPassword(text); setErrors({ ...errors, password: false }); }}
                 placeholderTextColor='#FFF'
               />
-               <View style={styles.inputWrapper}>
-              <TextInput
-                style={styles.input}
-                placeholder="Senhe"
-                secureTextEntry
-                value={password}
-                onChangeText={(text) => { setPassword(text); setErrors({ ...errors, password: false }); }}
-                placeholderTextColor='#FFF'
-              />
               {/* Ícone de erro exibido quando há um erro no campo */}
               {errors.password && <Icon name="times-circle" size={20} color="red" style={styles.errorIcon} />}
             </View>
@@ -264,14 +255,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logo: {
-    width: 321,
+    width: 320,
     height: 120,
     marginBottom: 30,
     borderWidth: 2,
     //borderColor: '#FFF',
   },
   inputContainer: {
-    width: '80%',
+    width: '90%',
     alignItems: 'center',
   },
   inputWrapper: {
@@ -281,14 +272,14 @@ const styles = StyleSheet.create({
   },
   input: {
     width: '100%',
-    height: 50,
+    height: 51,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.6)',
     backgroundColor: 'rgba(255,255,255,0.1)',
     borderRadius: 25,
     paddingHorizontal: 15,
     color: '#FFF',
-    fontSize: 16,
+    fontSize: 15,
   },
   errorIcon: {
     position: 'absolute',
